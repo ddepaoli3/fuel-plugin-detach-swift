@@ -1,0 +1,19 @@
+attributes:
+  metadata:
+    label: "Swift settings"
+    weight: 90
+  yaml_additional_config:
+    type: "textarea"
+    weight: 52
+    value: |
+      #Here put your configuration.
+      #Put '#' for comment
+      #Don't touch the option if you don't know what is
+      #
+      #key1=value1
+      #key2=value2
+    label: "Additional config"
+    description: "Just put here valid yaml"
+    regex:
+      source: '.+'
+      error: "This field should not be empty"
