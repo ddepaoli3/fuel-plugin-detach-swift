@@ -17,3 +17,12 @@ attributes:
     regex:
       source: '.+'
       error: "This field should not be empty"
+  partition_power:
+    value: "15"
+    label: "Swift partition power"
+    description: "Swift partition power used to compute total partition"
+    weight: 25
+    type: "text"
+    regex:
+      source: '[1-9][0-9]'
+      error: "You must provide a valid number in the range 10:99"
