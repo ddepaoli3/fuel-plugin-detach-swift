@@ -3,9 +3,19 @@
 
 - id: fuel-plugin-detach-swift
   type: group
-  role: [fuel-plugin-detach-swift]
+  role: [swift_proxy, swift_object]
 
-- id: fuel-plugin-detach-swift-deployment-puppet
+- id: swift_proxy
+  type: puppet
+  groups: [fuel-plugin-detach-swift]
+  required_for: [deploy_end]
+  requires: [deploy_start]
+  parameters:
+    puppet_manifest: "deploy.pp"
+    puppet_modules: ""
+    timeout: 3600
+
+- id: swift_object
   type: puppet
   groups: [fuel-plugin-detach-swift]
   required_for: [deploy_end]

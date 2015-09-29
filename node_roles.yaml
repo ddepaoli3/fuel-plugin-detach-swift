@@ -1,11 +1,11 @@
-fuel-plugin-detach-swift-proxy:
+swift_proxy:
   name: "Swift-Proxy"
   description: "Proxy swift node"
   has_primary: false
   public_ip_required: false
   weight: 1000
 
-fuel-plugin-detach-swift-object:
+swift_object:
   name: "Swift-Object"
   description: "Object swift node"
   has_primary: false

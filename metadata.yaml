@@ -1,5 +1,5 @@
 # Plugin name
-name: fuel-plugin-detach-swift
+name: detach-swift
 # Human-readable name for your plugin
 title: Separate swift from controller
 # Plugin version
